@@ -4,9 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Travel Agency</title>
 </head>
 <body>
-    
+    <!--  navigation -->
+      <!-- desktop navigation -->
+    <div class="container">
+            <!-- humberger -->
+     <div class="humbergur">
+        <i class="fa-solid fa-bars" data-visible="true"></i>
+        <i class="fa-solid fa-close" data-visible="false"></i>
+    </div>
+        <div class="desktop-menu">
+            <div class="logo">
+                <i class="fa-solid fa-location-dot"></i>
+                <a href="#">TravelAgency</a>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+            <div class="booking">
+                <a href="#">booking Now</a>
+            </div>
+        </div>
+        <!-- special -->
+        <div class="logo-mobile-menu">
+            <i class="fa-solid fa-location-dot"></i>
+            <a href="#">TravelAgency</a>
+        </div>
+        <!-- mobile menu -->
+        <div class="mobile-menu" data-visible="false">
+            <div class="logo">
+                <i class="fa-solid fa-location-dot"></i>
+                <a href="#">TravelAgency</a>
+            </div>
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+            <div class="booking-menu">
+                <a href="#">booking Now</a>
+            </div>
+        </div>
+         <!-- <div class="hero">
+            <h1>Enjoy Your Vacation With Us 😊 </h1>
+            <p>Tempor erat elitr rebum at clita diam amet diam et eos erat ipsum lorem sit</p>
+            <div class="input">
+                <input type="text" placeholder="E.g: thialand" id="input-header">
+                <!-- <p>Search</p> -->
+            </div>          
+         </div>  
+    </div>
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const hamburger = document.querySelector('.humbergur');
+        const mobileMenu = document.querySelector(".mobile-menu");
+        const icons = document.querySelectorAll("i");
+
+        hamburger.addEventListener("click", function (event) {
+            const isVisible = mobileMenu.getAttribute('data-visible');
+            if (isVisible == "true") {
+                // qari hiding
+                mobileMenu.setAttribute('data-visible', "false");
+                icons[0].setAttribute('data-visible', "true");
+                icons[1].setAttribute('data-visible', "false");
+            } else if (isVisible == "false") {
+                // soo bandhig showing
+                mobileMenu.setAttribute('data-visible', "true");
+                icons[0].setAttribute('data-visible', "false");
+                icons[1].setAttribute('data-visible', "true");
+            }
+        });
+
+
+    </script>
+
+
 </body>
 </html>
