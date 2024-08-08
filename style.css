@@ -135,6 +135,22 @@ body{
 .logo-mobile-menu{
     display: none;
 }
+.hero-mobile{
+    display: none;
+}
+.popular-text{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+   
+}
+.distination img{
+    width: 100%;
+}
+   
+
 
 /* mobile and tablet */
 @media(max-width:900px){
@@ -183,6 +199,7 @@ body{
         padding: 10px;
         color: white;
         font-size: 2rem;
+        transition: 0.3s;
     }
     .logo a{
         border-bottom: 1px solid rgb(255, 255, 255);
@@ -204,10 +221,12 @@ body{
     }
     .humbergur i[data-visible="true"]{
         display: block;
+        
     }
     .humbergur i[data-visible="false"]{
         display: none;
     }
+  
     .mobile-menu a{
         padding-top: 3rem;
        padding-bottom: 3rem;
@@ -232,15 +251,67 @@ body{
         text-decoration: none;
         color: white;
     }
-}
-/* @media(max-width:480px){
-    .hero h1{
-        font-size:4rem ;
+    .hero{
+        padding-top: 3rem;
+        text-align: center;
         
     }
-    .hero p{
-        font-size:14px ;
+    .hero h1{
+        padding-top: 17rem;
+        font-size: 2.5rem;
        
+        text-wrap: nowrap;
     }
-
-} */
+    .hero p{
+        /* padding-top: 12rem; */
+        font-size: 1rem;
+        text-wrap: nowrap;
+        padding: 0%;
+        padding-right: 5rem;
+    }
+    #input-header{
+        width: 100%;
+        /* display: none; */
+    }
+   .input [data-visible="false"]{
+        display: none;
+        /* z-index: -111111; */
+    }
+    .container{
+        width: 100%;
+        height: 100vh;
+        
+    }
+}
+@media(max-width:480px){
+ .hero{
+    display: none;
+ } 
+ .hero-mobile{
+    display: inline;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    /* margin-top: 12rem; */
+    padding-top: 12rem;
+ } 
+ .hero-mobile h1{
+    margin-bottom:2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+.hero-mobile p{
+    margin-bottom:2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+} 
+#input-header[data-visible="true"]{
+    display: none;
+    z-index: -111111;
+}
+       
+    
+}
