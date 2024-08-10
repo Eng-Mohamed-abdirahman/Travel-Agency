@@ -498,8 +498,8 @@ body {
   .clients{
     grid-template-columns: 1fr 1fr;
     width: 100%;
-    margin: 0;
-    padding: 0;
+    margin-inline: 1rem;
+    padding-bottom: 2rem;
   }
 
 }
@@ -549,30 +549,46 @@ body {
   }
   .box-1 h1 {
     margin-top: 5.5rem;
-    margin-left: 23rem;
+    margin-left: 15rem;
     width: 100px;
        font-size: 1rem;
   }
   .box-2 h1 {
     margin-top: 5.5rem;
-    margin-left: 23rem;
+    margin-left: 15rem;
     width: 100px;
        font-size: 1rem;
   }
   .box-3 h1 {
     margin-top: 5.5rem;
-    margin-left: 23rem;
+    margin-left: 15rem;
     width: 100px;
        font-size: 1rem;
   }
   .box-4 h1 {
     margin-top: 5.5rem;
-    margin-left: 23rem;
+    margin-left: 15rem;
     width: 100px;
        font-size: 1rem;
   }
   .packaages{
     grid-template-columns: 1fr ;
+    margin: 0;
+    padding: 0;
+    
+  }
+  .clients{
+    grid-template-columns: 1fr ;
+    width: 100%;
+    margin: 0;
+    gap: 10px;
+    /* margin-inline: 1rem;
+    padding-bottom: 2rem; */
+  }
+  .footer1{
+   flex-direction: column;
+   width: 100%;
+   height: 300px;
   }
 }
 /* andriod */
@@ -604,5 +620,12 @@ body {
       .packaages{
         grid-template-columns: 1fr ;
         width: 100px;
+      }
+      .clients{
+        grid-template-columns: 1fr ;
+        width: 100px;
+        margin: 0;
+       
+        
       }
 }
