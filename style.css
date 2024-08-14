@@ -206,7 +206,7 @@ body {
 .box-3 {
   grid-column: 1 / span 1;
   grid-row: 2 / span 1;
-  background: url(/img/indonesia.webp);
+  background: url(img/indonesia.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -231,8 +231,9 @@ body {
 .packaages{
     display: grid;
     grid-template-columns: repeat(3,400px);
+    margin-left: 20px;
     /* width: 1110px; */
-    margin-inline: 50px;
+    /* margin-inline: 40px; */
     gap: 20px;
     margin-block: 10rem;
     border-radius: 1rem;
@@ -307,7 +308,9 @@ body {
 .client {
     align-items: center;
     text-align: center;
-    margin-inline: 40px;
+    margin-left: 20px;
+    /* margin: 0 50px 0 50px; */
+    /* margin-inline: 40px; */
     box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.3);
     width: 380px;
     padding: 26px;
@@ -321,9 +324,9 @@ body {
     justify-content: space-around;
     margin-top: 10rem;
     background-color: #3bd73b;
-    height: 50px;
+    height: 60px;
    text-align: center;
-   /* padding: 10px; */
+   padding: 5px;
    font-size: 2rem;
    color: white;
    
@@ -333,6 +336,137 @@ body {
     gap: 20px;
     color: white;
 }
+.social-icons i {
+  border: 1px solid white;
+  border-radius: 1rem;
+  padding: 10px;
+}
+.social-icons i:hover{
+  background-color: white;
+  color:#3bd73b;
+  transition: 0.9s;
+}
+.aboutus{
+  display: flex;
+  margin-inline: 5rem;
+  gap: 40px;
+  height: 100vh;
+}
+.welcome h1{
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  font-weight: 700;
+  font-size: 4rem;
+  text-decoration: solid;
+}
+span{
+  color: #3bd73b;
+}
+.steps-about{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.steps{
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+}
+.steps i{
+  color: #3bd73b;
+}
+.btn-about h1{
+  background-color: #3bd73b;
+  width: 100px;
+  padding: 10px;
+  font-size: 1rem;
+  /* border-radius: 1rem; */
+  color: white;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+.meet{
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 5rem;
+}
+.box-about img{
+  width: 100%;
+  /* height: 40%; */
+  border-radius: 1rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  
+}
+.teams img{
+  width: 100%;
+  height: 40%;
+}
+/* .teams{
+
+  border-radius: 1rem;
+} */
+.box-about{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+  margin-inline: 3rem;
+  
+  
+  
+}
+.teams i{
+  padding: 10px;
+  font-size: 2rem;
+  border-bottom: 1px solid #3bd73b;
+  border-radius: 50%;
+  color: #3bd73b;
+}
+.teams i:hover{
+  background-color: #3bd73b;
+  color: white;
+  transition: 0.9s;
+}
+.teams{
+  text-align: center;
+}
+.service-text{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+.service-box{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20PX;
+  row-gap: 30px;
+  margin-inline: 4rem;
+}
+
+.services i{
+  font-size: 3.5rem;
+  /* color: #3bd73b; */
+  margin-bottom: 12px;
+}
+.services h1{
+  font-size: 1.5rem;
+}
+.services{
+  padding: 10px;
+  background-color: #f8f9fa;
+ 
+  /* height: 200px; */
+  padding: 20px;
+}
+.services:hover {
+  background-color: #3bd73b;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+
 
 /* mobile and tablet */
 @media (max-width: 900px) {
@@ -501,6 +635,31 @@ body {
     margin-inline: 1rem;
     padding-bottom: 2rem;
   }
+  .about-header h1{
+    font-size: 7rem;
+    text-align: center;
+    
+    margin-top: 5rem;
+  }
+  .aboutus{
+    flex-direction: column;
+  }
+  .btn-about h1{
+    width: 120px;
+  }
+  .box-about{
+    /* margin: 0; */
+    grid-template-columns: 1fr 1fr;  
+  }
+  .service-box{
+    grid-template-columns: repeat(3,1fr);
+    /* grid-row: 1fr 1fr; */
+  }
+  /* .services{
+    grid-area: initial;
+  } */
+  
+  
 
 }
 
@@ -590,6 +749,37 @@ body {
    width: 100%;
    height: 300px;
   }
+  .about-header h1{
+    font-size: 4rem;
+    text-align: center;
+    
+    margin-top: 5rem;
+  }
+  .aboutus{
+    flex-direction: column;
+    margin: 0;
+    padding: 10px;
+    /* margin: 10px; */
+  }
+  .aboutus img{
+    width: 100%;
+  }
+  .btn-about h1{
+    width: 120px;
+  }
+  .box-about{
+    /* margin: 0; */
+    grid-template-columns:  1fr; 
+  }
+  .footer1{
+    padding: 0;
+  }
+  .service-box{
+    grid-template-columns: repeat(2,1fr);
+    /* grid-row: 1fr 1fr; */
+  }
+  
+  
 }
 /* andriod */
 @media (max-width: 360px){

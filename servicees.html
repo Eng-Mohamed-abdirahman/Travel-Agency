@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Services</title>
+</head>
+<body>
+    <!--  navigation -->
+      <!-- desktop navigation -->
+    <div class="container">
+            <!-- humberger -->
+     <div class="humbergur">
+        <i class="fa-solid fa-bars" data-visible="true"></i>
+        <i class="fa-solid fa-close" data-visible="false"></i>
+    </div>
+        <div class="desktop-menu">
+            <div class="logo">
+                <i class="fa-solid fa-location-dot"></i>
+                <a href="#">TravelAgency</a>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="servicees.html">services</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </div>
+            <div class="booking">
+                <a href="booking.html">booking Now</a>
+            </div>
+        </div>
+        <!-- special -->
+        <div class="logo-mobile-menu">
+            <i class="fa-solid fa-location-dot"></i>
+            <a href="#">TravelAgency</a>
+        </div>
+        <!-- mobile menu -->
+        <div class="mobile-menu" data-visible="false">
+            <div class="logo">
+                <i class="fa-solid fa-location-dot"></i>
+                <a href="#">TravelAgency</a>
+            </div>
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="servicees.html">services</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </div>
+            <div class="booking-menu">
+                <a href="booking.html">booking Now</a>
+            </div>
+        </div>
+         <div class="hero">
+            <div class="about-header">
+            <h1 > Services </h1>
+        </div>     
+         </div> 
+
+
+
+         <div class="hero-mobile">
+            <div class="about-header">
+                <h1> Services </h1>
+            </div> 
+           
+         
+         </div>  
+          
+    </div>
+
+
+    <!-- Services -->
+     <div class="service-text">
+        <h1>Our Services</h1>
+     </div>
+     <div class="service-box">
+        <div class="services service-1">
+            <i class="fa-solid fa-globe"></i>
+            <h1>WorldWide Tours</h1>
+            <p>Diam elitr kasd sed at elitr <br> sed ipsum justo dolor sed <br> clita amet diam</p>
+        </div>
+        <div class="services service-1">
+            <i class="fa-solid fa-hotel"></i>
+            <h1>Hotel Reservation</h1>
+            <p>Diam elitr kasd sed at elitr <br>sed ipsum justo dolor sed <br>clita amet diam</p>
+        </div>
+        <div class="services service-1">
+            <i class="fa-solid fa-user"></i>
+            <h1>Travel Guides</h1>
+            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+        </div>
+        <div class="services service-1">
+            <i class="fa-solid fa-gear"></i>
+            <h1>Event Management</h1>
+            <p>Diam elitr kasd sed at elitr <br> sed ipsum justo dolor sed <br> clita amet diam</p>
+        </div>
+        <div class="services service-1">
+            <i class="fa-solid fa-globe"></i>
+            <h1>WorldWide Tours</h1>
+            <p>Diam elitr kasd sed at elitr <br> sed ipsum justo dolor sed <br> clita amet diam</p>
+        </div>
+        <div class="services service-1">
+            <i class="fa-solid fa-hotel"></i>
+            <h1>Hotel Reservation</h1>
+            <p>Diam elitr kasd sed at elitr <br>sed ipsum justo dolor sed <br>clita amet diam</p>
+        </div>
+        <div class="services service-1">
+            <i class="fa-solid fa-user"></i>
+            <h1>Travel Guides</h1>
+            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+        </div>
+        <div class="services service-1">
+            <i class="fa-solid fa-gear"></i>
+            <h1>Event Management</h1>
+            <p>Diam elitr kasd sed at elitr <br> sed ipsum justo dolor sed <br> clita amet diam</p>
+        </div>
+      
+     </div>
+
+
+
+
+
+    <footer>
+        <div class="footer1">
+            <div class="footer-text">
+                <p>TravelAgency</p>
+            </div>
+            <div class="copy">
+                &copy; All rights reserved.
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com/Eng-Mohamed-abdirahman" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/maxamed-abdirahman-8985682b6/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/maxamed.apdiraxman.7" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/mohameth__marcelo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+       
+    
+        <script>
+            const hamburger = document.querySelector('.humbergur');
+            const mobileMenu = document.querySelector(".mobile-menu");
+            const icons = document.querySelectorAll("i");
+    
+            hamburger.addEventListener("click", function (event) {
+                const isVisible = mobileMenu.getAttribute('data-visible');
+                if (isVisible == "true") {
+                    // qari hiding
+                    mobileMenu.setAttribute('data-visible', "false");
+                    icons[0].setAttribute('data-visible', "true");
+                    icons[1].setAttribute('data-visible', "false");
+                } else if (isVisible == "false") {
+                    // soo bandhig showing
+                    mobileMenu.setAttribute('data-visible', "true");
+                    icons[0].setAttribute('data-visible', "false");
+                    icons[1].setAttribute('data-visible', "true");
+                }
+            });
+    
+    
+        </script>
+    
+    
+    </body>
+    </html>
