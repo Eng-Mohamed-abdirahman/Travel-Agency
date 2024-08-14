@@ -694,7 +694,9 @@ margin-bottom: 3rem;
   .humbergur i[data-visible="false"] {
     display: none;
   }
-
+  .mobile-menu a{
+    list-style: none;
+  }
   .mobile-menu a {
     padding-top: 3rem;
     padding-bottom: 3rem;
